@@ -5,7 +5,9 @@
 
   font-family: "Inter", sans-serif;
 }
-
+body, html {
+  scroll-behavior: smooth;
+}
 header {
   width: 100%;
   height: 95px;
@@ -15,6 +17,8 @@ header {
 
   position: absolute;
   align-items: center;
+
+  z-index: 1;
 }
 
 .nav_header__container {
@@ -29,10 +33,18 @@ li {
   gap: 25px;
   display: flex;
   list-style: none;
-
-  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  color: #ffffff9d;
   font-weight: 400;
   font-size: 12px;
+}
+
+a:hover {
+  color: #ffffff;
+  cursor: pointer;
+  transition: .5s;
 }
 
 .btn__header > button {
@@ -47,6 +59,12 @@ li {
   font-weight: 300;
 
   background: transparent;
+}
+
+.btn__header > button:hover {
+  background: white;
+  color: black;
+  transition: .5s;
 }
 
 /* ======= HIRO CONTAINER ======= */
